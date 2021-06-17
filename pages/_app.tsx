@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import { ChakraProvider, Box, extendTheme } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import "@fontsource/fira-code";
 const theme = extendTheme({
   orange: {
     50: "#fff3da",
@@ -16,7 +17,7 @@ const theme = extendTheme({
     900: "#1f0c00",
   },
   fonts: {
-    body: "ubuntu-mono",
+    body: "Fira Code",
   },
   config: {
     initialColorMode: "dark",
