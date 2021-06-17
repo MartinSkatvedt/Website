@@ -5,7 +5,13 @@ import Contacts from "./Contacts";
 import Others from "./Others";
 const Footer: FC = () => {
   return (
-    <Box w="100%" bg="orange.400" position="fixed" bottom="0" padding="10px">
+    <Box
+      w="100%"
+      bg="orange.400"
+      position={["fixed", null]}
+      bottom="0"
+      padding="10px"
+    >
       <Stack
         direction={["column", "row", "row", "row"]}
         spacing="10%"
