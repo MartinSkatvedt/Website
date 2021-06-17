@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, Box, extendTheme } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 const theme = extendTheme({
@@ -26,9 +26,14 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <NavBar />
-      <Component {...pageProps} />
-      <Footer />
+      <Box h="100" w="100%">
+        <Box minHeight="100vh">
+          <NavBar />
+          <Component {...pageProps} />
+        </Box>
+
+        <Footer />
+      </Box>
     </ChakraProvider>
   );
 }
