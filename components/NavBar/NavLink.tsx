@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { Text } from "@chakra-ui/react";
 import { MenuTypes } from "./MenuLinks";
 import { useRouter } from "next/router";
-import Link from "next/Link";
+import Link from "next/link";
 type NavLinkProps = {
   name: string;
   url: MenuTypes;
@@ -16,7 +16,7 @@ const NavLink: FC<NavLinkProps> = ({ name, url }: NavLinkProps) => {
   if (currentTab == url) isCurrent = true;
   else isCurrent = false;
   return (
-    <Link href={url}>
+    <Link passHref href={url}>
       <Text
         fontSize="3xl"
         display="block"
