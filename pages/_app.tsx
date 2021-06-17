@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
-
+import Footer from "../components/Footer";
 const theme = extendTheme({
   orange: {
     50: "#fff3da",
@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <NavBar />
       <Component {...pageProps} />
+      <Footer />
     </ChakraProvider>
   );
 }
