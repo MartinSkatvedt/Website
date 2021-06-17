@@ -4,6 +4,9 @@ import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 const Contacts: FC = () => {
   return (
     <VStack>
+      <Text>
+        <b>KONTAKT</b>
+      </Text>
       <Box>
         <Text>
           <EmailIcon margin="4px" />

@@ -15,8 +15,6 @@ export enum MenuTypes {
 }
 
 const MenuLinks: FC<MenuLinksProps> = ({ isOpen }: MenuLinksProps) => {
-  const [currentMenu, setCurrentMenu] = useState<MenuTypes>(MenuTypes.NONE);
-  const changeMenu = (menu: MenuTypes) => setCurrentMenu(menu);
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
