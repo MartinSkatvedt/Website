@@ -16,7 +16,7 @@ const NavLink: FC<NavLinkProps> = ({ name, url }: NavLinkProps) => {
   if (currentTab == url) isCurrent = true;
   else isCurrent = false;
   return (
-    <Link passHref href={url}>
+    <Link passHref href={"/" + url}>
       <Text
         fontSize="3xl"
         display="block"

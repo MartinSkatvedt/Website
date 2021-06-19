@@ -7,7 +7,7 @@ const CV: FC = () => {
     <Box w="100%" textAlign="center">
       <Heading>CV</Heading>
       <Text>
-        Du kan se den faktiske PDFen{" "}
+        Er du på mobil kan du se CVen min{" "}
         <Link color="orange.400" href="/Resume.pdf">
           her
         </Link>
@@ -15,9 +15,9 @@ const CV: FC = () => {
 
       <Box
         width="100%"
-        display="flex"
         justifyContent="center"
         alignItems="center"
+        display={["none", "flex"]}
       >
         <Document loading="Loading PDF" file="/Resume.pdf" renderMode="canvas">
           <Page pageNumber={1} />
