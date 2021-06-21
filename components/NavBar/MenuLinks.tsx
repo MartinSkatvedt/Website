@@ -29,11 +29,12 @@ const MenuLinks: FC<MenuLinksProps> = ({ isOpen }: MenuLinksProps) => {
       >
         <NavLink url={MenuTypes.ABOUT} name="Om meg" />
         <NavLink url={MenuTypes.PROJECTS} name="Prosjekter" />
-        <NavLink url={MenuTypes.TECHNOLOGIES} name="Teknologier" />
         <NavLink url={MenuTypes.CV} name="CV" />
       </Stack>
     </Box>
   );
 };
+
+//<NavLink url={MenuTypes.TECHNOLOGIES} name="Teknologier" />
 
 export default MenuLinks;

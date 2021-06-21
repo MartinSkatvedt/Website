@@ -18,11 +18,7 @@ const NavFooter: FC = () => {
           Prosjekter
         </Text>
       </Link>
-      <Link passHref href="/Technologies">
-        <Text fontSize="1xl" display="block" textDecoration="none">
-          Teknologier
-        </Text>
-      </Link>
+
       <Link passHref href="/CV">
         <Text fontSize="1xl" display="block" textDecoration="none">
           CV
@@ -32,4 +28,11 @@ const NavFooter: FC = () => {
   );
 };
 
+/*
+  <Link passHref href="/Technologies">
+        <Text fontSize="1xl" display="block" textDecoration="none">
+          Teknologier
+        </Text>
+      </Link>
+      */
 export default NavFooter;
