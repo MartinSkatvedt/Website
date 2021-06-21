@@ -8,7 +8,7 @@ const About: FC = () => {
       <VStack>
         <AboutComponent
           header="Kort om meg"
-          imageUrl="/martin.jpg"
+          imageUrl="/image/about/martin.jpg"
           body="Jeg studerer informatikk ved NTNU Gløshaugen, på mitt andre år!
            Ved siden av studiene har jeg flere verv, og mange personlige prosjekter!"
         />

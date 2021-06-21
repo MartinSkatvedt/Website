@@ -5,7 +5,7 @@ const NavLogo: FC = () => {
   return (
     <Box w="200px" color={["white", "white", "primary.500", "primary.500"]}>
       <Link href="/">
-        <Image alt="Home screen logo" src="/logo.png" />
+        <Image alt="Home screen logo" src="/image/logo/logo.png" />
       </Link>
     </Box>
   );
