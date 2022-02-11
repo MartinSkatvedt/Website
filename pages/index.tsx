@@ -7,6 +7,7 @@ import {
   Icon,
   Stack,
   Link,
+  Image,
 } from "@chakra-ui/react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { DiStackoverflow } from "react-icons/di";
@@ -21,17 +22,26 @@ const Home: FC = () => {
       marginLeft="auto"
       marginRight="auto"
     >
-      <Heading>Martin Skatvedt</Heading>
-      <Text>
-        Jeg er en andreårsstudent på Informatikk ved NTNU Gløshaugen med stor
-        interesse for teknologi!
+      <Heading mb={5} as="h1" size="2xl">
+        Martin Skatvedt
+      </Heading>
+      <Image
+        src="/image/about/martin.jpg"
+        alt="Picture of me"
+        w={["80%", "60%", "50%", "40%"]}
+        ml="auto"
+        mr="auto"
+      />
+      <Text mt={5}>
+        Jeg studerer informatikk ved NTNU Gløshaugen, på mitt andre år! Ved
+        siden av studiene har jeg flere verv, og mange personlige prosjekter!
       </Text>
-
       <Divider margin="10px" />
       <Stack
         direction={["column", "row", "row", "row"]}
         spacing="4%"
         justify="center"
+        mb={10}
       >
         <Link
           target="_blank"

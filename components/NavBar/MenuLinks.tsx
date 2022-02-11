@@ -7,7 +7,6 @@ type MenuLinksProps = {
 };
 
 export enum MenuTypes {
-  ABOUT = "About",
   PROJECTS = "Projects",
   TECHNOLOGIES = "Technologies",
   CV = "CV",
@@ -27,14 +26,12 @@ const MenuLinks: FC<MenuLinksProps> = ({ isOpen }: MenuLinksProps) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <NavLink url={MenuTypes.ABOUT} name="Om meg" />
+        <NavLink url={MenuTypes.TECHNOLOGIES} name="Teknologier" />
         <NavLink url={MenuTypes.PROJECTS} name="Prosjekter" />
         <NavLink url={MenuTypes.CV} name="CV" />
       </Stack>
     </Box>
   );
 };
-
-//<NavLink url={MenuTypes.TECHNOLOGIES} name="Teknologier" />
 
 export default MenuLinks;

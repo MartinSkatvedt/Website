@@ -23,7 +23,15 @@ const theme = extendTheme({
     initialColorMode: "dark",
     useSystemColorMode: false,
   },
+  global: {
+    body: {
+      fontSmooth: "always",
+      webkitFontSmoothing: "antialiased",
+      mozOsxFontSmoothing: "grayscale",
+    },
+  },
 });
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>

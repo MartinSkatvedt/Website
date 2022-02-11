@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Box, HStack, VStack, Text, StackDivider } from "@chakra-ui/react";
+import { Box, HStack, VStack, Text, Link } from "@chakra-ui/react";
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 const Contacts: FC = () => {
   return (
@@ -9,8 +9,10 @@ const Contacts: FC = () => {
       </Text>
       <Box>
         <Text>
-          <EmailIcon margin="4px" />
-          martinskatvedt@gmail.com
+          <Link href="mailto: martinskatvedt@gmail.com">
+            <EmailIcon margin="4px" />
+            martinskatvedt@gmail.com
+          </Link>
         </Text>
       </Box>
 

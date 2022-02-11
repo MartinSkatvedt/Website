@@ -1,8 +1,9 @@
-import React, { FC, useState } from "react";
-import { Text } from "@chakra-ui/react";
+import React, { FC } from "react";
+import { Link } from "@chakra-ui/react";
 import { MenuTypes } from "./MenuLinks";
 import { useRouter } from "next/router";
-import Link from "next/link";
+import NextLink from "next/link";
+
 type NavLinkProps = {
   name: string;
   url: MenuTypes;
@@ -16,17 +17,21 @@ const NavLink: FC<NavLinkProps> = ({ name, url }: NavLinkProps) => {
   if (currentTab == url) isCurrent = true;
   else isCurrent = false;
   return (
-    <Link passHref href={"/" + url}>
-      <Text
+    <NextLink passHref href={"/" + url}>
+      <Link
         fontSize="3xl"
         display="block"
         textDecoration={isCurrent ? "underline" : "none"}
         textDecorationColor="orange.400"
         textUnderlineOffset="0.2em"
+        _hover={{ color: "orange.400" }}
+        transition="all 0.2s"
+        webkitTapHighlightColor="transparent"
+        _focus={{ outline: 0 }}
       >
         {name}
-      </Text>
-    </Link>
+      </Link>
+    </NextLink>
   );
 };
 
