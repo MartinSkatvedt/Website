@@ -2,6 +2,8 @@ import type { AppProps } from "next/app";
 import { ChakraProvider, Box, extendTheme } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import Head from "next/head";
+
 import "@fontsource/fira-code";
 const theme = extendTheme({
   orange: {
@@ -36,6 +38,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Box h="100" w="100%">
+        <Head>
+          <title>Martin Skatvedt</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
         <Box minHeight="100vh">
           <NavBar />
           <Component {...pageProps} />
