@@ -27,7 +27,6 @@ const MenuLinks: FC<MenuLinksProps> = ({ isOpen }: MenuLinksProps) => {
         pt={[4, 4, 0, 0]}
       >
         <NavLink url={MenuTypes.TECHNOLOGIES} name="Teknologier" />
-        <NavLink url={MenuTypes.PROJECTS} name="Prosjekter" />
         <NavLink url={MenuTypes.CV} name="CV" />
       </Stack>
     </Box>
